@@ -8,7 +8,7 @@ for (let weapon of data) {
     item_node.classList.add("list_item");
     
     let item_img_node = document.createElement("img");
-    item_img_node.setAttribute("src", "../imgs/CSGO_" + weapon_name + "_Inventory.png");
+    item_img_node.setAttribute("src", "../imgs/CSGO_" + weapon_name.replace(" ", "_") + "_Inventory.png");
     item_img_node.setAttribute("alt", weapon_name);
     item_img_node.classList.add("item_img");
 
