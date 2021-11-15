@@ -1,4 +1,8 @@
 /* common */
+.clickable:hover {
+    cursor: pointer;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     font-size: 20px;
@@ -9,7 +13,7 @@ body * {
     padding: 5px;
 }
 
-header a:not(#logo):hover, footer a:hover, .selected_link {
+header a:not(#logo):hover, footer a:hover, .selected_link, .hover_link:hover {
     background-color: white;
     color: black !important;
 }
@@ -50,12 +54,35 @@ header ul {
     justify-content: space-around;
 }
 
+@media screen AND (max-width: 700px) {
+    header ul {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    header ul li {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
 /* main */
 main {
     color: white;
 }
 
 main img {
+    background-color: #272A42;
+    border-radius: 5px;
+    padding: 5px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.icon_div {
+    display: flex;
+    justify-content: center;
+    flex-basis: auto;
     background-color: #272A42;
     border-radius: 5px;
     padding: 5px;
@@ -163,6 +190,35 @@ main h2 {
     object-fit: cover;
     grid-column: 1/2;
     grid-row: 1/6;
+}
+
+.icon_img {
+    object-fit: none;
+    max-width: 50%;
+    grid-column: 1/2;
+    grid-row: 1/6;
+}
+
+.back_btn {
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    align-self: flex-start;
+    text-decoration: underline;
+}
+
+.icon_name_div {
+    grid-column: 2/3;
+    grid-row: 1/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon_name {
+    font-weight: bold;
+    font-size: 20pt;
+    text-align: left;
 }
 
 .item_name {
