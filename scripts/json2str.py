@@ -10,6 +10,8 @@ for file in files:
         f_out = open("jsons_str/" + file[:-5] + ".js", "w")
     data = json.load(f_in)
     data = json.dumps(data)
+    data.replace("'", "")
+    data.replace("\n", "")
     f_out.write(file[:-5] + " = \'" + str(data) + "\';")
     f_in.close()
     f_out.close()

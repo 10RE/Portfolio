@@ -192,6 +192,10 @@ main h2 {
     grid-row: 1/6;
 }
 
+.skin_img {
+    object-fit: contain;
+}
+
 .icon_img {
     object-fit: none;
     max-width: 50%;
@@ -205,6 +209,11 @@ main h2 {
     font-size: 30px;
     align-self: flex-start;
     text-decoration: underline;
+}
+
+.price_div {
+    grid-column: 2/3;
+    grid-row: 5/6;
 }
 
 .icon_name_div {
@@ -301,7 +310,7 @@ main h2 {
     text-align: center;
 }
 
-.skin-tops .price {
+.price {
     margin-top: auto;
     text-align: center;
     background-color: #A22EF0;
@@ -309,7 +318,7 @@ main h2 {
     padding: 15px 30px;
 }
 
-.skin-tops .price:hover {
+.price:hover {
     background-color: white;
     color: black;
 }
