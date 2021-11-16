@@ -274,6 +274,23 @@ main h2 {
     font-size: 18px;
 }
 
+.page_navigation_flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.page_navigation_container {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page_nav {
+    text-decoration: underline;
+    margin: 0 2px;
+}
+
 /* skin.html */
 .podium {
     display: grid;
