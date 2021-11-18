@@ -14,7 +14,7 @@ function renderWeaponWithCatagory(cata) {
     back_node.addEventListener("click", () => {
         renderCatagory();
     })
-    back_node.textContent = "🡠 Back";
+    back_node.textContent = "< Back";
     weapon_container.append(back_node);
 
     for (let weapon of weapons_data_local) {
