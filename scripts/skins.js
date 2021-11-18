@@ -4,7 +4,32 @@ let skin_container = document.getElementById("skin_container");
 let skin_page_navigation = document.getElementById("skin_page_navigation");
 let skins_data_local = readWeaponData(skins_data);
 
-console.log(skins_data_local);
+let top_links = [
+    "https://market.csgo.com/item/4610085027-480085569-AWP+%7C+Dragon+Lore+%28Factory+New%29/",
+    "https://market.csgo.com/en/item/520941144-188530398-%E2%98%85%20StatTrak%E2%84%A2%20Butterfly%20Knife%20%7C%20Crimson%20Web%20(Minimal%20Wear)/",
+    "https://market.csgo.com/item/4614660576-188530139-%E2%98%85+Sport+Gloves+%7C+Vice+%28Minimal+Wear%29/"
+];
+/*
+let t1_skin = document.getElementById("t1_skin");
+let t2_skin = document.getElementById("t2_skin");
+let t3_skin = document.getElementById("t3_skin");
+t1_skin.classList.add("price", "clickable");
+t2_skin.classList.add("price", "clickable");
+t3_skin.classList.add("price", "clickable");
+t1_skin
+*/
+let top_prices = document.querySelectorAll("#skin_podium.flex_container .price");
+console.log(top_prices);
+for (let idx = 0; idx < top_prices.length; idx ++) {
+    //console.log(top_prices[idx]);
+    top_prices[idx].addEventListener("click", () => {
+        window.open(top_links[idx]);
+    });
+    //console.log();
+    top_prices[idx].classList.add("price", "clickable");
+}
+
+//console.log(skins_data_local);
 renderSkin(1);
 renderPageNav(1);
 
@@ -38,7 +63,7 @@ function renderSkin(page) {
         item_node.classList.add("list_item");
         
         let item_img_node = document.createElement("img");
-        item_img_node.setAttribute("src", skin["img_url"]);
+        item_img_node.setAttribute("src", skin["img_url"].replace(/100/i, "300"));
         item_img_node.setAttribute("alt", skin_name);
         item_img_node.classList.add("item_img", "skin_img");
 
@@ -63,7 +88,7 @@ function renderSkin(page) {
         item_node.append(item_price_div_node);
 
         skin_container.append(item_node);
-        console.log(skin);
+        //console.log(skin);
     }
 }
 

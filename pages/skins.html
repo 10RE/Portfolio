@@ -19,50 +19,75 @@
             </nav>
         </header>
         <main>
-            <h1>Top 3  skins</h1>
-            <div class="podium">
+            <h1>Hall of Fame</h1>
+            <!--
+                            <div class="podium" id="skin_podium">
                 <div class="skin-top1 skin-tops">
-                    <div class="name"> Marble Fade </div>
-                    wanted<img src="../imgs/skins/marble_fade.png" alt="top 1 skin">
-                    <div>
-                        <div class="skin_weapon_name"> 
-                            Ursus Knife
-                        </div>
-                        <div class="descript"> This isn't just a weapon, it's a conversation piece </div>
-                        <div class="quote descript"> - Imogen, Arms Dealer In Training </div>
-                    </div>
-                    <div class="price"> $566.01 </div>
-                </div>
-                <div class="skin-top2 skin-tops">
-                    <div class="name"> Oni Taiji </div>
-                    <img src="../imgs/skins/oni_taiji.png" alt="top 2 skin">
+                    <div class="name"> Dragon Lore </div>
+                    <img src="https://cdn.csgo.com//item/AWP+%7C+Dragon+Lore+%28Factory+New%29/300.png" alt="Dragon Lore">
                     <div>
                         <div class="skin_weapon_name"> 
                             AWP
                         </div>
-                        <div class="descript"> Face your demons </div>
-                        
+                        <div class="descript"> It has been custom painted with a knotwork dragon. 200 keys could never unlock its secrets. </div>
                     </div>
-                    <div class="price"> $353.86 </div>
+                    <div class="price top_prices"> $11842.502 </div>
                 </div>
-                <div class="skin-top3 skin-tops">
-                    <div class="name"> Mecha Industries </div>
-                    <img src="../imgs/skins/mecha_industries.png" alt="top 3 skin">
+                <div class="skin-top2 skin-tops">
+                    <div class="name"> ★ StatTrak™ | Crimson Web </div>
+                    <img src="https://cdn.csgo.com//item/%E2%98%85+StatTrak%E2%84%A2+Butterfly+Knife+%7C+Crimson+Web+%28Minimal+Wear%29/300.png" alt="top 2 skin">
                     <div>
                         <div class="skin_weapon_name"> 
-                            Desert Eagle
+                            Butterfly Knife
                         </div>
-                        <div class="descript"> Same technology, now available in a smaller form factor </div>
+                        <div class="descript"> Be careful where you walk, you never know where the web is spread. </div>
                         
                     </div>
-                    <div class="price"> $6.93 </div>
+                    <div class="price top_prices"> $2789.757 </div>
+                </div>
+                <div class="skin-top3 skin-tops">
+                    <div class="name"> Vice </div>
+                    <img src="https://cdn.csgo.com//item/%E2%98%85+Sport+Gloves+%7C+Vice+%28Minimal+Wear%29/300.png" alt="top 3 skin">
+                    <div>
+                        <div class="skin_weapon_name"> 
+                            ★ Sport Gloves
+                        </div>
+                        <div class="descript" id="t3_skin"> These synthetic gloves are crafted from a striking mix pink and blue technical fabrics. </div>
+                        
+                    </div>
+                    <div class="price top_prices"> $4177.7  </div>
+                </div>
+            </div>
+            -->
+            <div class="flex_container" id="skin_podium">
+                <div class="list_item">
+                    <div class="item_name"> AWP | Dragon Lore </div>
+                    <img src="https://cdn.csgo.com//item/AWP+%7C+Dragon+Lore+%28Factory+New%29/300.png" alt="Dragon Lore" class="item_img skin_img">
+                    <div class="descript"> It has been custom painted with a knotwork dragon. 200 keys could never unlock its secrets. </div>
+                    <div class="price_div">
+                        <div class="price clickable"> $11842.502 </div>
+                    </div>
+                </div>
+                <div class="list_item">
+                    <div class="item_name"> ★ StatTrak™ Butterfly Knife | Crimson Web </div>
+                    <img src="https://cdn.csgo.com//item/%E2%98%85+StatTrak%E2%84%A2+Butterfly+Knife+%7C+Crimson+Web+%28Minimal+Wear%29/300.png" alt="Crimson Web" class="item_img skin_img">
+                    <div class="descript"> Be careful where you walk, you never know where the web is spread. </div>
+                    <div class="price_div">
+                        <div class="price top_prices"> $2789.757 </div>
+                    </div>
+                </div>
+                <div class="list_item">
+                    <div class="item_name"> ★ Sport Gloves | Vice </div>
+                    <img src="https://cdn.csgo.com//item/%E2%98%85+Sport+Gloves+%7C+Vice+%28Minimal+Wear%29/300.png" alt="Vice" class="item_img skin_img">
+                    <div class="descript" id="t3_skin"> These synthetic gloves are crafted from a striking mix pink and blue technical fabrics. </div>
+                    <div class="price_div">
+                        <div class="price top_prices"> $4177.7  </div>
+                    </div>
                 </div>
             </div>
             <div class="page_navigation_flex">
                 <h1> Top Sellers </h1>
-                <div class="page_navigation_container" id="skin_page_navigation">
-                    <p>test</p>
-                </div>
+                <div class="page_navigation_container" id="skin_page_navigation"></div>
             </div>
             <div class="flex_container", id="skin_container">
                 <script type="text/javascript" src="../jsons_str/skins_data.js"></script>
