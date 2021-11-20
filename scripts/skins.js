@@ -1,7 +1,9 @@
 let PAGE_DISPLAY_NUMBER = 10;
 
 let skin_container = document.getElementById("skin_container");
-let skin_page_navigation = document.getElementById("skin_page_navigation");
+//let skin_page_navigation = document.getElementById("skin_page_navigation");
+let skin_page_navigation = document.querySelectorAll(".page_navigation_container");
+console.log(skin_page_navigation);
 let skins_data_local = readWeaponData(skins_data);
 
 let top_links = [
@@ -19,7 +21,6 @@ t3_skin.classList.add("price", "clickable");
 t1_skin
 */
 let top_prices = document.querySelectorAll("#skin_podium.flex_container .price");
-console.log(top_prices);
 for (let idx = 0; idx < top_prices.length; idx ++) {
     //console.log(top_prices[idx]);
     top_prices[idx].addEventListener("click", () => {
@@ -39,19 +40,22 @@ function readWeaponData(data_in) {
 }
 
 function renderPageNav (page) {
-    clearChildNodes(skin_page_navigation);
-    for (let idx = 1; idx < skins_data_local.length / PAGE_DISPLAY_NUMBER; idx ++) {
-        let page_nav_node = document.createElement("p");
-        page_nav_node.classList.add("clickable", "page_nav", "hover_link");
-        if (idx === page ) {
-            page_nav_node.classList.add("selected_link");
+    for (let nav of skin_page_navigation) {
+        console.log(nav);
+        clearChildNodes(nav);
+        for (let idx = 1; idx < skins_data_local.length / PAGE_DISPLAY_NUMBER; idx ++) {
+            let page_nav_node = document.createElement("p");
+            page_nav_node.classList.add("clickable", "page_nav", "hover_link");
+            if (idx === page ) {
+                page_nav_node.classList.add("selected_link");
+            }
+            page_nav_node.textContent = idx;
+            page_nav_node.addEventListener("click", () => {
+                renderSkin(idx);
+                renderPageNav(idx);
+            });
+            nav.append(page_nav_node);
         }
-        page_nav_node.textContent = idx;
-        page_nav_node.addEventListener("click", () => {
-            renderSkin(idx);
-            renderPageNav(idx);
-        });
-        skin_page_navigation.append(page_nav_node);
     }
 }
 

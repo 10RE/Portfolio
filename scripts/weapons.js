@@ -11,6 +11,7 @@ function renderWeaponWithCatagory(cata) {
     clearWeapons();
     let back_node = document.createElement("div");
     back_node.classList.add("back_btn", "hover_link", "clickable");
+    back_node.id = "back_btn";
     back_node.addEventListener("click", () => {
         renderCatagory();
     })

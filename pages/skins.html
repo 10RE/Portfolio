@@ -8,6 +8,7 @@
         <title> Skins </title>
     </head>
     <body>
+        <div class="skip"><a href="#skins_main">Skip to Main Content</a></div>
         <header>
             <nav>
                 <a href="../index.html" id="logo"><img src="../imgs/logo_large.png" alt="csgo starter kit"/></a>
@@ -19,7 +20,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="skins_main">
             <h1>Hall of Fame</h1>
             <!--
                             <div class="podium" id="skin_podium">
@@ -62,24 +63,24 @@
             -->
             <div class="flex_container" id="skin_podium">
                 <div class="list_item">
-                    <div class="item_name"> AWP | Dragon Lore </div>
                     <img src="https://cdn.csgo.com//item/AWP+%7C+Dragon+Lore+%28Factory+New%29/300.png" alt="Dragon Lore" class="item_img skin_img">
+                    <div class="item_name"> AWP | Dragon Lore </div>
                     <div class="descript"> It has been custom painted with a knotwork dragon. 200 keys could never unlock its secrets. </div>
                     <div class="price_div">
                         <div class="price clickable"> $11842.502 </div>
                     </div>
                 </div>
                 <div class="list_item">
-                    <div class="item_name"> ★ StatTrak™ Butterfly Knife | Crimson Web </div>
                     <img src="https://cdn.csgo.com//item/%E2%98%85+StatTrak%E2%84%A2+Butterfly+Knife+%7C+Crimson+Web+%28Minimal+Wear%29/300.png" alt="Crimson Web" class="item_img skin_img">
+                    <div class="item_name"> ★ StatTrak™ Butterfly Knife | Crimson Web </div>
                     <div class="descript"> Be careful where you walk, you never know where the web is spread. </div>
                     <div class="price_div">
                         <div class="price top_prices"> $2789.757 </div>
                     </div>
                 </div>
                 <div class="list_item">
-                    <div class="item_name"> ★ Sport Gloves | Vice </div>
                     <img src="https://cdn.csgo.com//item/%E2%98%85+Sport+Gloves+%7C+Vice+%28Minimal+Wear%29/300.png" alt="Vice" class="item_img skin_img">
+                    <div class="item_name"> ★ Sport Gloves | Vice </div>
                     <div class="descript" id="t3_skin"> These synthetic gloves are crafted from a striking mix pink and blue technical fabrics. </div>
                     <div class="price_div">
                         <div class="price top_prices"> $4177.7  </div>
@@ -91,8 +92,9 @@
                 <div class="page_navigation_container" id="skin_page_navigation"></div>
             </div>
             <div class="flex_container", id="skin_container">
-                <script type="text/javascript" src="../jsons_str/skins_data.js"></script>
-                <script type="text/javascript" src="../scripts/skins.js"></script>
+            </div>
+            <div class="page_navigation_flex">
+                <div class="page_navigation_container" id="skin_page_navigation_bottom"></div>
             </div>
         </main>
         <footer>
@@ -108,5 +110,7 @@
                 <p id="copyright"> Copyright &copy; 2021 10RE </p>
             </div>
         </footer>
+        <script type="text/javascript" src="../jsons_str/skins_data.js"></script>
+        <script type="text/javascript" src="../scripts/skins.js"></script>
     </body>
 </html>
