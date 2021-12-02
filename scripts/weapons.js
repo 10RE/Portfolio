@@ -18,6 +18,9 @@ function renderWeaponWithCatagory(cata) {
     back_node.textContent = "< Back";
     weapon_container.append(back_node);
 
+    weapon_container.classList.remove("weapon_category");
+    weapon_container.classList.add("weapon_list");
+
     for (let weapon of weapons_data_local) {
         if (weapon["catagory"] != cata) {
             continue;
@@ -49,19 +52,21 @@ function renderWeaponWithCatagory(cata) {
         flip_card_front_node.append(item_name_node);
         flip_card_front_node.append(item_description_node);
 
-        let price_node = document.createElement("p");
-        price_node.textContent = weapon["price"];
-
-        flip_card_back_node.append(price_node);
+        let add_ons = {"price": "Price", "reward": "Reward", "damage": "Damage", "ap": "Armor Penetration", "rpm": "Fire rate", "magazine": "Magazine size"};
+        for (let add_on in add_ons) {
+            let local_val = weapon[add_on];
+            let local_node = document.createElement("p");
+            if (add_on === "rpm") {
+                local_val = parseFloat(local_val).toFixed(2);
+            }
+            local_node.textContent = add_ons[add_on] + ": " + local_val;
+            flip_card_back_node.append(local_node);
+        }
 
         flip_card_node.append(flip_card_front_node);
         flip_card_node.append(flip_card_back_node);
 
         item_node.append(flip_card_node);
-
-        //item_node.addEventListener("click", () => {
-        //    flip_card_node.toggleClass("flip");
-        //});
 
         weapon_container.append(item_node);
         console.log(weapon);
@@ -71,6 +76,8 @@ function renderWeaponWithCatagory(cata) {
 function renderCatagory() {
     clearWeapons();
     for (let catagory of weapons_catagory) {
+        weapon_container.classList.add("weapon_category");
+        weapon_container.classList.remove("weapon_list");
         let item_node = document.createElement("div");
         item_node.classList.add("list_item", "clickable", "panel");
         item_node.addEventListener("click", () => {
