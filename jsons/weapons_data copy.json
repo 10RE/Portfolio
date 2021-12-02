@@ -1,0 +1,173 @@
+{
+    "weapons_data": [
+        {
+            "name": "AK47",
+            "catagory": "Rifles",
+            "description": "Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. It is most deadly in short, controlled bursts of fire."
+        },
+        {
+            "name": "AUG",
+            "catagory": "Rifles",
+            "description": "Powerful and accurate, the AUG scoped assault rifle compensates for its long reload times with low spread and a high rate of fire."
+        },
+        {
+            "name": "AWP",
+            "catagory": "Rifles",
+            "description": "High risk and high reward, the infamous AWP is recognizable by its signature report and one-shot, one-kill policy."
+        },
+        {
+            "name": "FAMAS",
+            "catagory": "Rifles",
+            "description": "A cheap option for cash-strapped players, the FAMAS effectively fills the niche between more expensive rifles and the less-effective SMGs."
+        },
+        {
+            "name": "G3SG1",
+            "catagory": "Rifles",
+            "description": "The pricy G3SG1 lowers movement speed considerably but compensates with a higher rate of fire than other sniper rifles."
+        },
+        {
+            "name": "Galil AR",
+            "catagory": "Rifles",
+            "description": "A less expensive option among the terrorist-exclusive assault rifles, the Galil AR is a serviceable weapon in medium to long-range combat."
+        },
+        {
+            "name": "M4A1-S",
+            "catagory": "Rifles",
+            "description": "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy."
+        },
+        {
+            "name": "M4A4",
+            "catagory": "Rifles",
+            "description": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs."
+        },
+        {
+            "name": "SCAR-20",
+            "catagory": "Rifles",
+            "description": "The SCAR-20 is a semi-automatic sniper rifle that trades a high rate of fire and powerful long-distance damage for sluggish movement speed and big price tag."
+        },
+        {
+            "name": "SG 553",
+            "catagory": "Rifles",
+            "description": "The terrorist-exclusive SG 553 is a premium scoped alternative to the AK-47 for effective long-range engagement."
+        },{
+            "name": "SSG 08",
+            "catagory": "Rifles",
+            "description": "The SSG 08 bolt-action is a low-damage but very cost-effective sniper rifle, making it a smart choice for early-round long-range marksmanship."
+        },
+        {
+            "name": "CZ75-Auto",
+            "catagory": "Pistols",
+            "description": "A fully automatic variant of the CZ75, the CZ75-Auto is another inexpensive choice against armored opponents. But with very little ammo provided, strong trigger discipline is required."
+        },
+        {
+            "name": "Desert Eagle",
+            "catagory": "Pistols",
+            "description": "As expensive as it is powerful, the Desert Eagle is an iconic pistol that is difficult to master but surprisingly accurate at long range."
+        },
+        {
+            "name": "Dual Berettas",
+            "catagory": "Pistols",
+            "description": "Firing two large-mag Berettas at once will lower accuracy and increase load times. On the bright side, you will get to fire two large-mag Berettas at once."
+        },
+        {
+            "name": "Five-SeveN",
+            "catagory": "Pistols",
+            "description": "Highly accurate and armor-piercing, the pricy Five-Seven is a slow-loader that compensates with a generous 20-round magazine and forgiving recoil."
+        },
+        {
+            "name": "Glock-18",
+            "catagory": "Pistols",
+            "description": "The Glock 18 is a serviceable first-round pistol that works best against unarmored opponents and is capable of firing three-round bursts."
+        },
+        {
+            "name": "P2000",
+            "catagory": "Pistols",
+            "description": "Accurate and controllable, the German-made P2000 is a serviceable first-round pistol that works best against unarmored opponents."
+        },
+        {
+            "name": "P250",
+            "catagory": "Pistols",
+            "description": "A low-recoil firearm with a high rate of fire, the P250 is a relatively inexpensive choice against armored opponents."
+        },
+        {
+            "name": "R8 Revolver",
+            "catagory": "Pistols",
+            "description": "The R8 Revolver delivers a highly accurate and powerful round at the expense of a lengthy trigger-pull. Firing rapidly by fanning the hammer may be the best option when point-blank stopping power is required."
+        },
+        {
+            "name": "Tec-9",
+            "catagory": "Pistols",
+            "description": "An ideal pistol for the Terrorist on the move, the Tec-9 is lethal in close quarters and features a high magazine capacity."
+        },
+        {
+            "name": "USP-S",
+            "catagory": "Pistols",
+            "description": "A fan favorite from Counter-Strike: Source, the Silenced USP Pistol has a detachable silencer that gives shots less recoil while suppressing attention-getting noise."
+        },
+        {
+            "name": "MAC-10",
+            "catagory": "SMGs",
+            "description": "Essentially a box that bullets come out of, the MAC-10 SMG boasts a high rate of fire, with poor spread accuracy and high recoil as trade-offs."
+        },
+        {
+            "name": "MP5-SD",
+            "catagory": "SMGs",
+            "description": "Often imitated but never equaled, the iconic MP5 is perhaps the most versatile and popular SMG in the world. This SD variant comes equipped with an integrated silencer, making an already formidable weapon whisper-quiet."
+        },
+        {
+            "name": "MP7",
+            "catagory": "SMGs",
+            "description": "Versatile but expensive, the German-made MP7 SMG is the perfect choice for high-impact close-range combat."
+        },
+        {
+            "name": "MP9",
+            "catagory": "SMGs",
+            "description": "Manufactured in Switzerland, the cutting-edge MP9 SMG is an ergonomic polymer weapon favored by private security firms."
+        },
+        {
+            "name": "P90",
+            "catagory": "SMGs",
+            "description": "Easily recognizable for its unique bullpup design, the P90 is a great weapon to shoot on the move due to its high-capacity magazine and low recoil."
+        },
+        {
+            "name": "PP-Bizon",
+            "catagory": "SMGs",
+            "description": "The Bizon SMG is low-damage, but offers a uniquely designed high-capacity drum magazine that reloads quickly."
+        },
+        {
+            "name": "UMP-45",
+            "catagory": "SMGs",
+            "description": "The misunderstood middle child of the SMG family, the UMP45 small magazine is the only drawback to an otherwise versatile close-quarters automatic."
+        },
+        {
+            "name": "M249",
+            "catagory": "Heavy",
+            "description": "A strong open-area LMG, the M249 is the perfect choice for players willing to trade a slow fire rate for increased accuracy and a high ammo capacity."
+        },
+        {
+            "name": "MAG-7",
+            "catagory": "Heavy",
+            "description": "The CT-exclusive Mag-7 delivers a devastating amount of damage at close range. Its rapid magazine-style reloads make it a great tactical choice."
+        },
+        {
+            "name": "Negev",
+            "catagory": "Heavy",
+            "description": "The Negev is a beast that can keep the enemy at bay with its pin-point supressive fire, provided you have the luxury of time to gain control over it."
+        },
+        {
+            "name": "Nova",
+            "catagory": "Heavy",
+            "description": "The Nova rock-bottom price tag makes it a great ambush weapon for a cash-strapped team."
+        },
+        {
+            "name": "Sawed-Off",
+            "catagory": "Heavy",
+            "description": "The classic Sawed-Off deals very heavy close-range damage, but with its low accuracy, high spread and slow rate of fire, you would better kill what you hit."
+        },
+        {
+            "name": "XM1014",
+            "catagory": "Heavy",
+            "description": "The XM1014 is a powerful fully automatic shotgun that justifies its heftier price tag with the ability to paint a room with lead fast."
+        }
+    ]
+}

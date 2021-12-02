@@ -64,7 +64,7 @@ function renderSkin(page) {
     for (let skin of skins_data_local.slice((page-1) * PAGE_DISPLAY_NUMBER, page * PAGE_DISPLAY_NUMBER)) {
         let skin_name = skin["name"];
         let item_node = document.createElement("div");
-        item_node.classList.add("list_item");
+        item_node.classList.add("list_item", "panel");
         
         let item_img_node = document.createElement("img");
         item_img_node.setAttribute("src", skin["img_url"].replace(/100/i, "300"));

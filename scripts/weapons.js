@@ -24,7 +24,13 @@ function renderWeaponWithCatagory(cata) {
         }
         let weapon_name = weapon["name"];
         let item_node = document.createElement("div");
-        item_node.classList.add("list_item");
+        item_node.classList.add("flip-card", "list_item");
+        let flip_card_node = document.createElement("div");
+        flip_card_node.classList.add("flip-card-inner");
+        let flip_card_front_node = document.createElement("div");
+        flip_card_front_node.classList.add("flip-card-front", "panel");
+        let flip_card_back_node = document.createElement("div");
+        flip_card_back_node.classList.add("flip-card-back");
         
         let item_img_node = document.createElement("img");
         item_img_node.setAttribute("src", "../imgs/CSGO_" + weapon_name.replace(" ", "_") + "_Inventory.png");
@@ -39,9 +45,23 @@ function renderWeaponWithCatagory(cata) {
         item_description_node.classList.add("item_descript", "descript");
         item_description_node.textContent = weapon["description"];
 
-        item_node.append(item_img_node);
-        item_node.append(item_name_node);
-        item_node.append(item_description_node);
+        flip_card_front_node.append(item_img_node);
+        flip_card_front_node.append(item_name_node);
+        flip_card_front_node.append(item_description_node);
+
+        let price_node = document.createElement("p");
+        price_node.textContent = weapon["price"];
+
+        flip_card_back_node.append(price_node);
+
+        flip_card_node.append(flip_card_front_node);
+        flip_card_node.append(flip_card_back_node);
+
+        item_node.append(flip_card_node);
+
+        //item_node.addEventListener("click", () => {
+        //    flip_card_node.toggleClass("flip");
+        //});
 
         weapon_container.append(item_node);
         console.log(weapon);
@@ -52,7 +72,7 @@ function renderCatagory() {
     clearWeapons();
     for (let catagory of weapons_catagory) {
         let item_node = document.createElement("div");
-        item_node.classList.add("list_item", "clickable");
+        item_node.classList.add("list_item", "clickable", "panel");
         item_node.addEventListener("click", () => {
             renderWeaponWithCatagory(catagory);
         })
