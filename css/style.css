@@ -614,8 +614,12 @@ main h2 {
     .list_item {
         width: auto;
         height: 400px;
-
     }
+
+    .weapon_list .list_item {
+        height: 400px;
+    }
+    
 
     .panel {
         display: flex;
