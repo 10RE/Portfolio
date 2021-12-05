@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="../css/html5reset.css">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="shortcut icon" href="../imgs/logo_icon.png">
+        <link href="../css/lightbox.css" rel="stylesheet" />
         <title> About us </title>
     </head>
     <body id="about">
@@ -41,7 +42,9 @@
                     <h2> > Q-Learning in Smart Traffic Light Control </h2>
                     <p> In this project, we use python to simulate a two-way cross intersection with no turn and build a traffic light system. By using Q-learning algorithm and training the Q-learning model for 1,000,000 times, we obtained an optimized passing time for the traffic light control system under the condition of known car numbers on each lane. </p>
                     <div class="img_holder">
-                        <img src="../imgs/about_imgs/qlearning.png" alt="q learning result"/>
+                        <a href="../imgs/about_imgs/qlearning.png" data-lightbox="projects">
+                            <img src="../imgs/about_imgs/qlearning.png" alt="q learning result"/>
+                        </a>
                         <figcaption> Time cost for 500 vehicles to pass </figcaption>
                     </div>
 
@@ -55,16 +58,22 @@
                         <li> mix pigments according to printable color description, so that the final color is the same as desired one </li>
                     </ul>
                     <div class="img_holder">
-                        <img src="../imgs/about_imgs/block_diagram.png" alt="block diagram"/>
+                        <a href="../imgs/about_imgs/block_diagram.png" data-lightbox="projects">
+                            <img src="../imgs/about_imgs/block_diagram.png" alt="block diagram"/>
+                        </a>
                         <figcaption> Block diagram </figcaption>
                     </div>
                     <p> Challenge in this project is that we write all the drivers for the components attached to the board ourselves, based on communication protocols. We also designed and build the prototype and user interface in this project. </p>
                     <div class="img_holder">
-                        <img src="../imgs/about_imgs/sideview.png" alt="side view"/>
+                        <a href="../imgs/about_imgs/sideview.png" data-lightbox="projects">
+                            <img src="../imgs/about_imgs/sideview.png" alt="side view"/>
+                        </a>
                         <figcaption> Side view </figcaption>
                     </div>
                     <div class="img_holder">
-                        <img src="../imgs/about_imgs/topview.png" alt="top view"/>
+                        <a href="../imgs/about_imgs/topview.png" data-lightbox="projects">
+                            <img src="../imgs/about_imgs/topview.png" alt="top view"/>
+                        </a>
                         <figcaption> Top view </figcaption>
                     </div>
             </article>
@@ -73,28 +82,46 @@
                 <h1> Photos I have taken</h1>
                 <p> In my spare time, I enjoy walking around and take photos, here are some of my works: </p>
                 <div class = "img_holder">
-                    <img src = "../imgs/ganjiang.JPG" alt = "ganjiang">
+                    <a href="../imgs/photos/ganjiang.JPG" data-lightbox="gallery">
+                        <img src = "../imgs/photos/ganjiang.JPG" alt = "ganjiang" class = "hoverable">
+                    </a>
                 </div>
                 <div class = "img_holder">
-                    <img src = "../imgs/tian.JPG" alt = "tian">
+                    <a href="../imgs/photos/tian.JPG" data-lightbox="gallery">
+                        <img src = "../imgs/photos/tian.JPG" alt = "tian">
+                    </a>
+                    
                 </div>
                 <div class = "img_holder">
-                    <img src = "../imgs/haichao.JPG" alt = "haichao">
+                    <a href="../imgs/photos/haichao.JPG" data-lightbox="gallery">
+                        <img src = "../imgs/photos/haichao.JPG" alt = "haichao">
+                    </a>
                 </div>
                 <div class = "img_holder">
-                    <img src = "../imgs/shangyuan.jpeg" alt = "shangyuan">
+                    <a href="../imgs/photos/shangyuan.jpeg" data-lightbox="gallery">
+                        <img src = "../imgs/photos/shangyuan.jpeg" alt = "shangyuan">
+                    </a>
                 </div>
                 <div class = "img_holder">
-                    <img src = "../imgs/shaqiu.jpeg" alt = "shaqiu">
+                    <a href="../imgs/photos/shaqiu.jpeg" data-lightbox="gallery">
+                        <img src = "../imgs/photos/shaqiu.jpeg" alt = "shaqiu">
+                    </a>
+                    
                 </div>
                 <div class = "img_holder">
-                    <img src = "../imgs/tengwangge.jpeg" alt = "tengwangge">
+                    <a href="../imgs/photos/tengwangge.jpeg" data-lightbox="gallery">
+                        <img src = "../imgs/photos/tengwangge.jpeg" alt = "tengwangge">
+                    </a>
                 </div>
                 <div class = "img_holder">
-                    <img src = "../imgs/lijiao.jpeg" alt = "lijiao">
+                    <a href="../imgs/photos/lijiao.jpeg" data-lightbox="gallery">
+                        <img src = "../imgs/photos/lijiao.jpeg" alt = "lijiao">
+                    </a>
                 </div>
                 <div class = "img_holder">
-                    <img src = "../imgs/shiku.jpeg" alt = "shiku">
+                    <a href="../imgs/photos/shiku.jpeg" data-lightbox="gallery">
+                        <img src = "../imgs/photos/shiku.jpeg" alt = "shiku">
+                    </a>
                 </div>
             </article>
             
@@ -114,4 +141,15 @@
             </div>
         </footer>
     </body>
+    <script src="../scripts/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'fadeDuration': 200,
+            'imageFadeDuration': 200,
+            'resizeDuration': 200,
+            'positionFromTop': 0,
+            'showImageNumberLabel': false,
+            'wrapAround': true
+        })
+    </script>
 </html>

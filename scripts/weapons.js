@@ -36,7 +36,7 @@ function renderWeaponWithCatagory(cata) {
         flip_card_back_node.classList.add("flip-card-back");
         
         let item_img_node = document.createElement("img");
-        item_img_node.setAttribute("src", "../imgs/CSGO_" + weapon_name.replace(" ", "_") + "_Inventory.png");
+        item_img_node.setAttribute("src", "../imgs/weapons/CSGO_" + weapon_name.replace(" ", "_") + "_Inventory.png");
         item_img_node.setAttribute("alt", weapon_name);
         item_img_node.classList.add("item_img");
 
@@ -88,7 +88,7 @@ function renderCatagory() {
         item_img_div_node.classList.add("icon_div", "item_img");
 
         let item_img_node = document.createElement("img");
-        item_img_node.setAttribute("src", "../imgs/" + catagory + ".png");
+        item_img_node.setAttribute("src", "../imgs/weapon_icons/" + catagory + ".png");
         item_img_node.setAttribute("alt", catagory);
         item_img_node.classList.add("icon_img");
         //item_img_div_node.append(item_img_node);
