@@ -44,7 +44,7 @@
 /* end of flip-card citation */
 
 /* common */
-main {
+main:not(#index_main) {
     margin: 20px 5vw;
 }
 
@@ -205,8 +205,13 @@ footer img {
 
 /* index */
 
+#index_main {
+    background-color: #272A42;
+    text-align: center;
+}
+
 #index #welcome_logo {
-    width: 98%;
+    width: 60vw;
 }
 
 /* About */
@@ -482,7 +487,25 @@ article {
     padding: 0;
 }
 
-@media screen AND (max-width: 700px) {
+#useful_websites img {
+    background-color: transparent;
+    object-fit: contain;
+}
+
+#useful_websites .item_name {
+    grid-row: 2/3;
+}
+
+#useful_websites .item_descript {
+    grid-row: 3/4;
+}
+
+#articles_main a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen AND (max-width: 780px) {
 
     main h1 {
         font-size: 25px;
@@ -703,7 +726,6 @@ article {
         height: 400px;
     }
     
-
     .panel {
         display: flex;
         flex-direction: column;
