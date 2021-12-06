@@ -16,7 +16,7 @@
 
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner, .flip-card:focus-within .flip-card-inner {
     transform: rotateY(180deg);
 }
 
@@ -90,6 +90,10 @@ body {
     font-size: 20px;
     background-color: #181A29;
     height: 100%;
+}
+
+input, textarea { 
+    font-family:inherit; 
 }
 
 ::-webkit-input-placeholder {

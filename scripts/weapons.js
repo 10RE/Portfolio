@@ -28,6 +28,7 @@ function renderWeaponWithCatagory(cata) {
         let weapon_name = weapon["name"];
         let item_node = document.createElement("div");
         item_node.classList.add("flip-card", "list_item");
+        item_node.setAttribute("tabindex", "0");
         let flip_card_node = document.createElement("div");
         flip_card_node.classList.add("flip-card-inner");
         let flip_card_front_node = document.createElement("div");
@@ -80,6 +81,7 @@ function renderCatagory() {
         weapon_container.classList.remove("weapon_list");
         let item_node = document.createElement("div");
         item_node.classList.add("list_item", "clickable", "panel");
+        item_node.setAttribute("tabindex", "0");
         item_node.addEventListener("click", () => {
             renderWeaponWithCatagory(catagory);
         })
