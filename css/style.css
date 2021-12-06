@@ -900,3 +900,18 @@ article {
         height: 400px;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .flip-card-inner {
+        transition: none;
+    }
+
+    .skip a{
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    #encourage_words {
+        background-attachment: unset;
+    }
+}
