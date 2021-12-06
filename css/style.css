@@ -92,6 +92,26 @@ body {
     height: 100%;
 }
 
+::-webkit-input-placeholder {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+:-moz-placeholder {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+::-moz-placeholder {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+:-ms-input-placeholder {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+}
+
 body * {
     padding: 5px;
 }
