@@ -203,9 +203,39 @@ footer img {
     text-align: right;
 }
 
+/* form */
+.contact_form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    border: none;
+    outline: none;
+    color: white;
+}
+
+textarea{
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
 
 /* index */
-
 #index_main {
     background-color: #272A42;
     text-align: center;
