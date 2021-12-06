@@ -223,7 +223,7 @@ footer img {
 
 .descript {
     font-style: italic;
-    color: #B3B3B3;
+    color: #bbbbbb;
     font-size: 15px;
 }
 
@@ -306,7 +306,7 @@ main h2 {
     width: 90%;
     margin: 10px 0;
     max-width: 800px;
-    background-color: #353959;
+    background-color: #272b42;
     padding: 20px;
     border-radius: 5px;
 }
