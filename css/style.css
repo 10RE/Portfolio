@@ -564,7 +564,8 @@ article {
 }
 
 #encourage_words {
-    margin-bottom: 20vh;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
 }
 
 @media screen AND (max-width: 780px) {
@@ -883,7 +884,7 @@ article {
     }
 
     #encourage_words {
-        margin-bottom: 0;
+        margin: 0;
         height: 20vh;
         display: flex;
         flex-direction: column;
@@ -891,6 +892,7 @@ article {
         background-image: url('../imgs/about_imgs/chicken.png');
         background-size: 70vw auto;
         background-attachment: fixed;
+        background-position: left center;
     }
 
 }
