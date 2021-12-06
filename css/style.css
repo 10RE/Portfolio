@@ -53,6 +53,10 @@ main:not(#index_main) {
     margin: 0;
 }
 
+.light_box img {
+    margin-top: 0;
+}
+
 .clickable:hover {
     cursor: pointer;
 }
@@ -273,7 +277,6 @@ textarea{
 #about p {
     margin: 10px;
 }
-
 
 /* weapon.html */
 
