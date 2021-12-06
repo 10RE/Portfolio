@@ -563,6 +563,10 @@ article {
     color: white;
 }
 
+#encourage_words {
+    margin-bottom: 20vh;
+}
+
 @media screen AND (max-width: 780px) {
 
     main h1 {
@@ -876,6 +880,17 @@ article {
 
     #about_main img {
         height: 300px;
+    }
+
+    #encourage_words {
+        margin-bottom: 0;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-image: url('../imgs/about_imgs/chicken.png');
+        background-size: 70vw auto;
+        background-attachment: fixed;
     }
 
 }
