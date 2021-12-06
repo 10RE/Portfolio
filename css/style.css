@@ -73,8 +73,8 @@ main:not(#index_main) {
     background: white;
     left: 0;
     padding: 6px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
+    -webkit-transition: top 0.2s ease-out;
+    transition: top 0.2s ease-out;
     z-index: 1;
     position: absolute;
     top: -80px;
@@ -99,6 +99,7 @@ body * {
 header a:not(#logo):hover, footer a:hover, .selected_link, .hover_link:hover {
     background-color: white;
     color: black !important;
+    text-decoration: underline;
 }
 
 /* header */
